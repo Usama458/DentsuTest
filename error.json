@@ -1,0 +1,69 @@
+[
+   {
+      "error":"Pipeline did not complete successfully",
+      "stacktrace":"com.snaplogic.snap.api.SnapDataException: Pipeline did not complete successfully\n\tat com.snaplogic.snaps.flow.PipeExec$PipeCompletionHandler.run(PipeExec.java:1233)\n\tat com.snaplogic.snaps.flow.PipeExec$1.run(PipeExec.java:577)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "reason":"Snap errors: {ruuid=a356042a-d463-460a-a365-b08bbd753afb, label=Map Opportunity - Merkle to DAN, failure=$original.Delivery_fgfNet_Amount__c is undefined. Perhaps you meant: Delivery_Net_Amount__c, ACV_Delivery_Net__c, Closed_Reason__c, DAN_Geography__c, RFI_Received_Date__c, RFP_Received_Date__c, Expected_Renewal_Date__c, ... and 3 others ..., reason='Delivery_fgfNet_Amount__c' was not found while evaluating the sub-expression '$original.Delivery_fgfNet_Amount__c', resolution=You can check for the existence of a field with the 'in' operator (e.g. 'abc' in $obj)}",
+      "resolution":"Fix the child pipeline errors and try again",
+      "status_code":"error",
+      "child_errors":[
+         {
+            "ruuid":"a356042a-d463-460a-a365-b08bbd753afb",
+            "label":"Map Opportunity - Merkle to DAN",
+            "failure":"$original.Delivery_fgfNet_Amount__c is undefined. Perhaps you meant: Delivery_Net_Amount__c, ACV_Delivery_Net__c, Closed_Reason__c, DAN_Geography__c, RFI_Received_Date__c, RFP_Received_Date__c, Expected_Renewal_Date__c, ... and 3 others ...",
+            "reason":"'Delivery_fgfNet_Amount__c' was not found while evaluating the sub-expression '$original.Delivery_fgfNet_Amount__c'",
+            "resolution":"You can check for the existence of a field with the 'in' operator (e.g. 'abc' in $obj)"
+         }
+      ],
+      "run_id":"6d92daa9-f390-48ae-b8db-c8536bc5cfbd",
+      "state":"FAILED",
+      "snap_details":{
+         "label":"Process Event",
+         "instance_id":"d254e2c3-e0a5-4cfc-a318-e633310b756a",
+         "class_id":"com-snaplogic-snaps-flow-pipeexec",
+         "build_tag":"snapsmrc515",
+         "views":{
+            "in":{
+               "input0":{
+                  "count":1
+               }
+            },
+            "out":{
+
+            },
+            "error":{
+               "error0":{
+                  "count":0
+               }
+            }
+         }
+      },
+      "original":{
+         "schema":"JzsArNco6-Z7wG9okM2_ZA",
+         "Opportunity_ID__c":"0061700000JI0N8AAL",
+         "Opportunity_Close_Date__c":"2019-07-15",
+         "OpportunityLineItem_Amount__c":90000,
+         "Account_ID__c":"0011700000ryBfgAAE",
+         "ACV_Delivery_Net__c":106000,
+         "Closed_Reason__c":"",
+         "Currency__c":"USD",
+         "CreatedById":"00517000002llneAAA",
+         "Opportunity_Name__c":"1015 - Media Reporting",
+         "Is_Closed__c":false,
+         "Opportunity_Type__c":"New Client - New Work",
+         "RFP_Received_Date__c":null,
+         "Term_In_Months__c":12,
+         "DAN_Geography__c":"",
+         "Expected_Renewal_Date__c":null,
+         "OpportunityLineItem_ID__c":"00k1700000CP7TYAA1",
+         "Opportunity_Region__c":"Americas",
+         "Opportunity_Source__c":"",
+         "CreatedDate":"2019-08-07T09:21:04.348Z",
+         "Closed_Reason_Description__c":"",
+         "Account_URN__c":"0011700000ryBfgAAE",
+         "Delivery_Net_Amount__c":106000,
+         "replayId":824,
+         "RFI_Received_Date__c":null,
+         "Opportunity_Stage__c":"1. Qualified"
+      }
+   }
+]

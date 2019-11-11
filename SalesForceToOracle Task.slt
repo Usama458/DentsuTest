@@ -1,0 +1,23 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "SalesForceToOracle Task",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "execution_timeout": null,
+        "include_external_urls": true,
+        "job_alias": null,
+        "job_type": "standard",
+        "llfeed_token": "jpTjfFOtcufaM1JChut9u2rLcGW4n7op",
+        "max_failures": 10,
+        "max_in_flight": 200,
+        "notification": {
+            "recipients": null
+        },
+        "pipeline_path": "SalesForceToOracle",
+        "snaplex_path": "cloud-dev"
+    },
+    "schedule": {},
+    "trigger": {},
+    "trigger_type": "ScheduleTrigger"
+}
